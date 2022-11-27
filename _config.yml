@@ -94,7 +94,7 @@ social:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Analytics
 analytics:
-  provider               : "google"
+  provider               : "google-gtag"
   google:
     tracking_id          : "G-EXYBK42068"
     anonymize_ip         : false
