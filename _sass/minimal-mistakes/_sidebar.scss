@@ -23,16 +23,12 @@
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 
-    &:hover {
-      opacity: 1;
-    }
-
     &.sticky {
       overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-      max-height: calc(100vh - #{$nav-height} - 2em);
+      height: calc(100vh - #{$nav-height} - 2em);
     }
   }
 
@@ -56,9 +52,9 @@
 
   p,
   li {
-    font-family: $sans-serif;
+    font-family: $serif;
     font-size: $type-size-6;
-    line-height: 1.5;
+    line-height: 1.3;
   }
 
   img {
@@ -98,6 +94,13 @@
   }
 }
 
+.sidebar__top {
+  position: fixed;
+  bottom: 1.5em;
+  right: 2em;
+  z-index: 10;
+}
+
 .splash .sidebar__right {
   @include breakpoint($large) {
     position: relative;
@@ -127,12 +130,11 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 240px;
+    border-radius: 10%;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
     }
   }
 }
@@ -143,7 +145,7 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
-  font-family: $cute;
+  font-family: $helvetica;
 
   @include breakpoint($large) {
     display: block;
@@ -163,17 +165,18 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 .sidebar .author__name {
-  font-family: $cute;
+  font-family: $consolas;
   font-size: $type-size-4;
+  color:#FFF;
 }
 
 .author__bio {
   margin: 0;
-  font-family: $cute;
+  font-family: $consolas;
   font-size: $type-size-4;
 
   @include breakpoint($large) {
@@ -182,7 +185,7 @@
   }
 
   p {
-    font-family: $cute;
+    font-family: $consolas;
     margin-top: 1.6px;
     margin-bottom: 3px;
   }
@@ -192,21 +195,20 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $cute;
   z-index: 20;
+  position: relative;
   cursor: pointer;
 
   li:last-child {
     a {
       margin-bottom: 0;
-      font-family: $cute;
     }
   }
 
   .author__urls {
     span.label {
+      font-family: $helvetica;
       padding-left: 5px;
-      font-family: $cute;
     }
   }
 
@@ -243,18 +245,19 @@
 }
 
 .author__urls {
+  font-family: $helvetica;
   display: none;
   position: absolute;
   right: 0;
   margin-top: 15px;
-  padding: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background: $background-color;
   box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
   cursor: default;
-  font-family: $cute;
 
   &.is--visible {
     display: block;
@@ -315,9 +318,9 @@
 
   a {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     padding-right: 5px;
-    padding-top: 2px;
+    padding-top: 0px;
     padding-bottom: 2px;
     color: inherit;
     font-size: $type-size-5;

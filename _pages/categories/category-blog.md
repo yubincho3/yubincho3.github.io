@@ -1,7 +1,7 @@
 ---
-title: "Git & Github"
+title: "Jekyll/Github 블로그 만들기"
 layout: archive
-permalink: categories/git
+permalink: categories/blog
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Git %}
+{% assign posts = site.categories.Blog %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

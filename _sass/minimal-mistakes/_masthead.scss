@@ -50,7 +50,8 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-  font-family: $helvetica;
+  font-size: $type-size-4;
+  font-family: $sans-serif;
   align-self: center;
   font-weight: bold;
   // z-index: 20;
@@ -85,10 +86,11 @@
 }
 
 .masthead__menu-item {
+  font-family: $consolas;
+  font-size: $type-size-4;
   display: block;
   list-style-type: none;
   white-space: nowrap;
-  font-family: $cute;
 
   &--lg {
     padding-right: 2em;
