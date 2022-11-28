@@ -2,7 +2,7 @@
 title:  "[Blog] jekyll 블로그에 Google Analytics 추가하기(minimal-mistakes)" 
 
 categories:
-  - Git
+  - Blog
 tags:
   - [Blog, Google, minimal-mistakes]
 ---
